@@ -1,55 +1,27 @@
-/````markdown
 # 🎲 Secret Number Guessing Game
 
-Welcome to the Number Guessing Game! 🚀 Challenge your luck and guessing skills by trying to guess the secret number. 🤔
+A console game in C++: the program picks a random number from 1 to 100 and you guess it with "too low / too high" hints.
 
-## 🛠️ Getting Started
+## Features
 
-### Prerequisites
+- Random secret number each round (`rand()` seeded with the current time).
+- Hints after every guess and an attempt counter shown on success.
+- Input validation: non-numeric input is rejected without crashing.
+- Play-again prompt (`Y`/`N`).
 
-To play this game, you'll need:
+## Run
 
-- A C++ compiler (e.g., g++, Visual C++)
-- CMake (optional, for building)
+Requires a C++ compiler (g++, clang++ or MSVC).
 
-
-### 🌟 Features
-
-- 🎁 Randomly generated secret numbers.
-- 🚀 Error handling for invalid input.
-- 🔄 Option to play again or gracefully exit.
-
-## 🙌 Contributing
-
-We welcome contributions from the open-source community, especially beginners! If you'd like to contribute to this project for Hacktoberfest or any other time, here's how:
-
-1. **Fork this Repository**
-
-2. **Create a New Branch**
-
-   ```sh
-   git checkout -b my-feature
-   ```
-
-3. **Make Your Awesome Changes**
-
-   - Enhance the game, squash bugs, or improve the code.
-   - Don't forget to add comments to explain your genius!
-
-4. **Push Your Changes**
-
-   ```sh
-   git push origin my-feature
-   ```
-
-5. **Create a Pull Request (PR)**
-
-   - Describe your changes and share your brilliance with us! 🌠
-
-
-## 🙏 Acknowledgments
-
-This project was born out of a love for coding and a desire to make learning C++ fun! Enjoy the game and let the guessing games begin! 🎉
+```bash
+g++ -std=c++11 main.cpp -o guess_game
+./guess_game
 ```
 
-Feel free to further customize and enhance this README to match the spirit and personality of your project!
+## Contributing
+
+Issues and pull requests are welcome: fork, create a branch, and open a PR describing the change.
+
+## Author
+
+Sanket Mali · [GitHub](https://github.com/Sanket1516)
